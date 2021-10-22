@@ -6,7 +6,7 @@ export default function Navbar(){
     <div>
         <div className="collapse" id="navbarToggleExternalContent">
           <div className="bg-primary p-4">
-            <h5 classNames="text-white h4">Aproveite a API</h5>
+            <h5 classNames="text-white h4">Aproveite a API do Covid-19</h5>
             <span className="text-white">https://github.com/cod3rleo<br/></span>
             <span className="text-white">https://www.linkedin.com/in/leeonardolima/ <br/></span>
 

@@ -7,7 +7,7 @@ const LineGraph = (props) =>{
         <Bar data ={{
           labels:["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro",],
           datasets:[{
-            label: "Grafico Covid-19",
+            label: "Gráfico Covid-19",
             fill: false,
             backgroundColor: [
               'rgba(255, 99, 132, 0.4)',

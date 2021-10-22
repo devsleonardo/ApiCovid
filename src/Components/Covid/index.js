@@ -1,5 +1,4 @@
 import React, { Component, useEffect, useState } from  "react";
-import axios from "axios";
 import api from "../../api/api";
 import covid from "./Covid.css"
 
@@ -8,12 +7,42 @@ export default function Covid() {
   const [id, setId] = useState([])
   const [countries, setCountries] = useState()
   const [idtitle, setIdTitle] = useState()
+  const [recovered, setRecovered] = useState()
+  const [critical, setCritical] = useState()
+  const [deaths, setDeaths] = useState()
+  const [loading, setLoading] = useState()
+  
+  
+  
 
   useEffect (()=>{
+    setLoading(true);
     api.get('https://covid19-api.com/country/all?format=json').then((response)=>{
+      setLoading(false);
+
+      if(response.status === 200){
+        setRecovered(response.data.recovered)
+        setRecovered(response.data.critical)
+        setRecovered(response.data.deaths)
+      }
+
       setId(response.data);
     })
-  },[id, countries])
+    .catch(error =>{
+      console.log(error)
+    })
+  },[])
+
+  if(loading){
+    return(
+      <div class="text-center">
+        <p className="text-center fw-bold">Buscando dados da API...  </p>
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+         )
+  }
 
   return (
         <div>  

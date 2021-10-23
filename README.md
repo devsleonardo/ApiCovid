@@ -24,3 +24,4 @@ Após a instalação, rode o comando abaixo e espere iniciar.
 ## Captura da aplicação
 
 
+![alt text](https://github.com/cod3rleo/ApiCovid/blob/master/Cap%20Inicial.png)

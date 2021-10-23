@@ -4,7 +4,7 @@ Você precisa ter esse repositório, é simples, rode os comandos abaixo, em cas
 ```bash
 > git clone https://github.com/cod3rleo/ApiCovid.git
 > cd ApiCovid
-> npm install
+> npm install or/or npm i
 
 ```
 
